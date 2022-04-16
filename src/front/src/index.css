@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../src/fonts/Montserrat/Montserrat-Regular.ttf');
+  font-weight: normal;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+button{
+  background-color: transparent;
+  border: none;
+}
+.container{
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
