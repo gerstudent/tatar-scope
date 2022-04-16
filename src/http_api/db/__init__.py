@@ -7,18 +7,13 @@ from contextlib import contextmanager
 
 from fastapi import HTTPException, status
 
+from core.config import get_app_settings
+
+settings = get_app_settings()
+
 # Create connection string
-CONNECTION_STRING = sqlalchemy.engine.url.URL.create(
-    drivername="postgresql",
-    username="postgres",
-    password="",
-    host="localhost",
-    database="tatarby",
-    port="5432",
-)
+CONNECTION_STRING = settings.database_url
 
-
-print(CONNECTION_STRING)
 # Create an engine for out database to have a connection
 engine = sqlalchemy.create_engine(str(CONNECTION_STRING))
 
