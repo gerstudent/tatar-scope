@@ -14,8 +14,14 @@ button{
   background-color: transparent;
   border: none;
 }
+ul{
+  list-style: none;
+}
 .container{
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1200px;
+}
+.profile-grid{
+  grid-template-columns: 2fr 1fr;
 }

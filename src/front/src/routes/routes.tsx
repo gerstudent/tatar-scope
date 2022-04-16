@@ -8,6 +8,7 @@ import {
 import MainPage from '../pages/MainPage';
 import App from '../App';
 import LoginPage from '../pages/LoginPage';
+import Profile from '../pages/Profile';
 export default function RouterView () {
     return (
         <Router>
@@ -16,6 +17,7 @@ export default function RouterView () {
                 <Route index element={<MainPage />} />
                 <Route path='login' element={<LoginPage isSignedUp={true} />} />
                 <Route path='signup' element={<LoginPage isSignedUp={false} />} />
+                <Route path='profile' element={<Profile />} />
             </Routes>
         </Router>
     )

@@ -15,7 +15,7 @@ interface IMainPageProps {
 export default function MainPage ({events}: IMainPageProps) {
     return (
         <div className="">
-            <HeaderComponent />
+            <HeaderComponent isLoggedIn={true} name={'Nafisa Valieva'} role={'Катнашучы'} />
             <main className="container">
                 <section className="mt-24">
                     <h1 className="text-6xl font-bold">
@@ -24,15 +24,15 @@ export default function MainPage ({events}: IMainPageProps) {
                     <p className="mt-10 text-lg">
                         Татарча чараларга, лекцияләргә, күргәзмәләргә һәм башка җирләргә йөр
                     </p>
-                    <button>Катнашу</button>
+                    <button className="text-white bg-green-500 p-4 rounded-md">Катнашу</button>
                 </section>
                 <section className="mt-36">
                     <h3 className="text-4xl">Киләсе чаралар</h3>
                     <ul className="flex flex-wrap">
                         {
-                            events?.map((event: any) => {
+                            events?.map((event: any, index: number) => {
                                 return (
-                                    <EventComponent name={event.name}
+                                    <EventComponent key={index} name={event.name}
                                     location={event.location}
                                     date={event.date}
                                     price={event.price}

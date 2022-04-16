@@ -1,14 +1,5 @@
 import React from "react";
-
-interface IEventComponentProps {
-    name: string, 
-    description: string,
-    location: string,
-    date: string,
-    tickets: number,
-    price: number,
-    image: string
-}
+import { IEventComponentProps } from "../interfaces";
 export default function EventComponent({name, description, location, date, tickets, price, image}: IEventComponentProps) {
     return (
         <div className="">
