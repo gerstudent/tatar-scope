@@ -14,7 +14,9 @@ const events = [
       image: 'https://i0.wp.com/tatar-congress.org/wp-content/uploads/2018/04/AFISHA.jpg?fit=1093%2C773&ssl=1'
   }
 ]
-
+const isLoggedIn = false
+const isSignedUp = false
+const role = 'Participant'
 function App() {
   return (
     // <RouterView></RouterView>

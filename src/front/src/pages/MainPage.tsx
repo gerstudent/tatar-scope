@@ -1,7 +1,8 @@
 import React from "react";
 import logo from '../assets/tatevents.svg'
 import EventComponent from "../components/EventComponent";
-
+import {Link} from 'react-router-dom'
+import HeaderComponent from "../components/HeaderComponent";
 interface IMainPageProps {
     events?: {name: string, 
         description: string,
@@ -14,22 +15,7 @@ interface IMainPageProps {
 export default function MainPage ({events}: IMainPageProps) {
     return (
         <div className="">
-            <header className="container mt-4 flex items-center justify-between">
-                <div className="">
-                    <button className="">
-                        <img src={logo} alt="" />
-                    </button>
-                </div>
-                <div className="flex items-center">
-                    <button className="bg-transparent p-4 border-0">
-                        Оештыручыларга 
-                    </button>
-                    <button className="bg-green-500 p-4 border-0">
-                        Катнашучыларга
-                    </button>
-                    <button className="ml-4 bg-slate-400 p-4 rounded-md">Афишага күчү</button>
-                </div>
-            </header>
+            <HeaderComponent />
             <main className="container">
                 <section className="mt-24">
                     <h1 className="text-6xl font-bold">
