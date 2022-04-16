@@ -22,9 +22,9 @@ export default function MainPage ({events}: IMainPageProps) {
                 </div>
                 <div className="flex items-center">
                     <button className="bg-transparent p-4 border-0">
-                        Оештыручыларга
+                        Оештыручыларга 
                     </button>
-                    <button className="bg-transparent p-4 border-0">
+                    <button className="bg-green-500 p-4 border-0">
                         Катнашучыларга
                     </button>
                     <button className="ml-4 bg-slate-400 p-4 rounded-md">Афишага күчү</button>

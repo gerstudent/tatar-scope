@@ -13,7 +13,7 @@ export default function EventComponent({name, description, location, date, ticke
     return (
         <div className="">
             <div className="">
-                <img src={image} alt="" style={{width: '400px', height: '400px'}} />
+                <img src={image} alt="" style={{width: '250px', height: '250px'}} />
             </div>
             <p className="p-4 pb-0 text-lg font-bold">{name}</p>
             <div className="p-4">
