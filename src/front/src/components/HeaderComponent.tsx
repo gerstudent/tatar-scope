@@ -5,7 +5,7 @@ import {IHeaderComponentProps} from '../interfaces'
 import './HeaderComponent.css'
 export default function HeaderComponent ({isLoggedIn, name, role}: IHeaderComponentProps) {
     return (
-        <header className="container header ">
+        <header className="container header">
                 <div className="">
                     <Link to={'/'} className="">
                         <img src={logo} alt="" />
@@ -31,7 +31,7 @@ export default function HeaderComponent ({isLoggedIn, name, role}: IHeaderCompon
                         </div>
                         <div className="ml-4">
                             <p className="text-lg">{name}</p>
-                            <p className="mt-4">{role}</p>
+                            <p>{role}</p>
                         </div>
                     </Link>
                 }

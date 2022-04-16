@@ -3,7 +3,7 @@ import { IGroupComponentProps } from '../interfaces'
 
 export default function GroupComponent({name, people, image, tags}: IGroupComponentProps) {
     return (
-        <div className="flex items-start">
+        <div className="flex-center">
             <div className="">
                 <img src={image} alt=""
                 style={{width: '50px',
@@ -12,13 +12,13 @@ export default function GroupComponent({name, people, image, tags}: IGroupCompon
                 className="mr-4" />
             </div>
             <div className="">
-                <h4 className="font-bold text-3xl">{name}</h4>
-                <p className="mt-2">{people} кеше</p>
-                <ul className="flex flex-wrap">
+                <h4 className="font-bold text-lg">{name}</h4>
+                <p className="">{people} кеше</p>
+                <ul className='tags' style={{display: 'flex', flexWrap: 'wrap'}}>
                     {
                         tags?.map((tag: string, index: number) => {
                             return (
-                                <li key={index} className='p-4 rounded-sm bg-slate-200'>
+                                <li key={index} style={{padding: '4px', borderRadius: '3px', backgroundColor: '#f5f5f5'}}>
                                     {tag}
                                 </li>
                             )

@@ -47,7 +47,7 @@ const events = [
 export default function MainPage () {
     return (
         <div className="">
-            <HeaderComponent isLoggedIn={false} name={'Nafisa Valieva'} role={'Катнашучы'} />
+            <HeaderComponent isLoggedIn={true} name={'Nafisa Valieva'} role={'Катнашучы'} />
             <main className="container">
                 <section  
                 style={{

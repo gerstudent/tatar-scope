@@ -40,9 +40,7 @@ a:hover{
   padding: 0 15px;
   max-width: 1200px;
 }
-.profile-grid{
-  grid-template-columns: 2fr 1fr;
-}
+
 .flex-center{
   display: flex;
   align-items: center;
@@ -98,6 +96,9 @@ a:hover{
 .font-bold{
   font-weight: bold;
 }
-.main-events li:not(:last-child) {
+.main-events li:not(:last-child), .groups li:not(:last-child) {
   margin-right: 24px;
+}
+.tags li:not(:last-child) {
+  margin-right: 8px;
 }

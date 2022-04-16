@@ -5,7 +5,7 @@ export interface IHeaderComponentProps {
     name?: string
     role?: string
 }
-export interface IMainPageProps {
+export interface IEventsPageProps {
     events?: {name: string, 
         description: string,
         location: string,
@@ -13,6 +13,13 @@ export interface IMainPageProps {
         tickets: number,
         price: number,
         image: string}[]
+}
+export interface IGroupPageProps {
+    groups?:{
+        name?: string,
+        people?: number,
+        image?: string,
+        tags?: string[]}[]
 }
 export interface IGroupComponentProps {
     name?: string,

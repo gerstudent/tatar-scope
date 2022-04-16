@@ -1,6 +1,7 @@
 .header{
-    margin-top: 24px;
+    padding-top: 18px;
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
+    padding-bottom: 18px;
 }
