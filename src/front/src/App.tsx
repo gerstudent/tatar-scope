@@ -5,13 +5,13 @@ import './index.css'
 
 const events = [
   {
-      name: '',
-      description: '',
-      location: '',
-      date: '',
-      tickets: 0,
-      price: 0,
-      image: ''
+      name: 'Мин татарча сөйләшәм',
+      description: 'Һәр елны үткәрелә торган татар телендә сөйләшү акциясе',
+      location: 'Казан шәһәре, Бауман урамы',
+      date: '26.04.2022',
+      tickets: 100,
+      price: 10,
+      image: 'https://i0.wp.com/tatar-congress.org/wp-content/uploads/2018/04/AFISHA.jpg?fit=1093%2C773&ssl=1'
   }
 ]
 
