@@ -43,8 +43,9 @@ export default function Profile () {
                             <span className="mt-2 text-lg">{role}</span>
                         </div>
                     </div>
+                    <h3 className="font-bold text-2xl">Төркемнәр</h3>
                     <ul className="flex flex-wrap">
-                        <h3 className="font-bold text-3xl">Төркемнәр</h3>
+                        
                         {
                             groups.map((group: any, index: number) => {
                                 return (

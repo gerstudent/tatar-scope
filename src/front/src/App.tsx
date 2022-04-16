@@ -20,7 +20,7 @@ const role = 'Participant'
 function App() {
   return (
     // <RouterView></RouterView>
-    <MainPage events={events} />
+    <MainPage />
   );
 }
 
